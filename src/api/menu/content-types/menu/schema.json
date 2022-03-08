@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "pages",
+  "collectionName": "menus",
   "info": {
-    "singularName": "page",
-    "pluralName": "pages",
-    "displayName": "Page",
+    "singularName": "menu",
+    "pluralName": "menus",
+    "displayName": "Menu",
     "description": ""
   },
   "options": {
@@ -13,10 +13,7 @@
   "pluginOptions": {},
   "attributes": {
     "slug": {
-      "type": "uid"
-    },
-    "IntroText": {
-      "type": "text"
+      "type": "string"
     }
   }
 }

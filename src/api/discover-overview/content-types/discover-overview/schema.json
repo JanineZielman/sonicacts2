@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "discover_overviews",
+  "info": {
+    "singularName": "discover-overview",
+    "pluralName": "discover-overviews",
+    "displayName": "Discover Overview"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "slug": {
+      "type": "uid"
+    },
+    "intro": {
+      "type": "text"
+    }
+  }
+}

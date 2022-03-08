@@ -1,11 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "pages",
+  "collectionName": "community_items",
   "info": {
-    "singularName": "page",
-    "pluralName": "pages",
-    "displayName": "Page",
-    "description": ""
+    "singularName": "community-item",
+    "pluralName": "community-items",
+    "displayName": "Community Item"
   },
   "options": {
     "draftAndPublish": true
@@ -15,8 +14,8 @@
     "slug": {
       "type": "uid"
     },
-    "IntroText": {
-      "type": "text"
+    "name": {
+      "type": "string"
     }
   }
 }

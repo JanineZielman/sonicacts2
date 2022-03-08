@@ -1,10 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "homepages",
+  "collectionName": "globals",
   "info": {
-    "singularName": "homepage",
-    "pluralName": "homepages",
-    "displayName": "Homepage",
+    "singularName": "global",
+    "pluralName": "globals",
+    "displayName": "Global",
     "description": ""
   },
   "options": {
@@ -16,17 +16,13 @@
       "type": "uid"
     },
     "logo": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos"
-      ]
-    },
-    "IntroText": {
-      "type": "text"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
