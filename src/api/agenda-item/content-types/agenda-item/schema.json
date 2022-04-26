@@ -19,7 +19,9 @@
       "type": "dynamiczone",
       "components": [
         "basic.image",
-        "basic.text"
+        "basic.text",
+        "basic.embed",
+        "basic.sidenote"
       ]
     },
     "community_items": {
@@ -43,13 +45,38 @@
       "type": "string"
     },
     "cover_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "footnotes": {
+      "type": "component",
+      "repeatable": false,
+      "component": "footnotes.footnotes"
+    },
+    "dates": {
+      "type": "dynamiczone",
+      "components": [
+        "dates.dates",
+        "dates.deadline"
+      ]
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category",
+      "inversedBy": "agenda_items"
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tag.tag",
+      "inversedBy": "agenda_items"
     }
   }
 }

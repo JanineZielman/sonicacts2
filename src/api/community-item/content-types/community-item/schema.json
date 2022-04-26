@@ -4,7 +4,8 @@
   "info": {
     "singularName": "community-item",
     "pluralName": "community-items",
-    "displayName": "Community Item"
+    "displayName": "Community Item",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -16,6 +17,33 @@
     },
     "name": {
       "type": "string"
+    },
+    "job_description": {
+      "type": "string"
+    },
+    "cover_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "content": {
+      "type": "dynamiczone",
+      "components": [
+        "basic.text",
+        "basic.image",
+        "basic.embed",
+        "basic.sidenote"
+      ]
+    },
+    "footnotes": {
+      "type": "component",
+      "repeatable": false,
+      "component": "footnotes.footnotes"
     }
   }
 }

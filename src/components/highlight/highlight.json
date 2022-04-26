@@ -1,12 +1,15 @@
 {
-  "collectionName": "components_basic_images",
+  "collectionName": "components_highlight_highlights",
   "info": {
-    "displayName": "Image",
-    "icon": "image",
+    "displayName": "Highlight",
+    "icon": "award",
     "description": ""
   },
   "options": {},
   "attributes": {
+    "text": {
+      "type": "text"
+    },
     "image": {
       "type": "media",
       "multiple": false,
@@ -17,16 +20,8 @@
         "videos"
       ]
     },
-    "image_caption": {
-      "type": "richtext"
-    },
-    "size": {
-      "type": "enumeration",
-      "enum": [
-        "small",
-        "medium",
-        "big"
-      ]
+    "url": {
+      "type": "string"
     }
   }
 }

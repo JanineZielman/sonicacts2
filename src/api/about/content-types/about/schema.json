@@ -20,8 +20,21 @@
       "components": [
         "basic.image",
         "basic.sidenote",
-        "basic.text"
+        "basic.text",
+        "basic.collapsible"
       ]
+    },
+    "sidebar": {
+      "type": "richtext"
+    },
+    "contact_adres": {
+      "type": "text"
+    },
+    "contact_info": {
+      "type": "text"
+    },
+    "contact_links": {
+      "type": "richtext"
     }
   }
 }

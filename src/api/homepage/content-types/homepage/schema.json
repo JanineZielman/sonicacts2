@@ -27,6 +27,28 @@
     },
     "IntroText": {
       "type": "text"
+    },
+    "shop_url": {
+      "type": "string"
+    },
+    "highlight_text": {
+      "type": "text"
+    },
+    "highlight_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "highlight_url": {
+      "type": "string"
+    },
+    "highlight_subtitle": {
+      "type": "string"
     }
   }
 }

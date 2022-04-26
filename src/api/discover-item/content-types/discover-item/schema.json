@@ -20,7 +20,8 @@
       "components": [
         "basic.image",
         "basic.text",
-        "basic.sidenote"
+        "basic.sidenote",
+        "basic.embed"
       ]
     },
     "title": {
@@ -50,9 +51,31 @@
         "videos"
       ]
     },
-    "tag": {
+    "discover_items": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "oneToMany",
+      "target": "api::discover-item.discover-item"
+    },
+    "agenda_items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::agenda-item.agenda-item"
+    },
+    "footnotes": {
+      "type": "component",
+      "repeatable": false,
+      "component": "footnotes.footnotes"
+    },
+    "date": {
+      "type": "date"
+    },
+    "hide": {
+      "type": "boolean",
+      "required": false
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "manyToMany",
       "target": "api::tag.tag",
       "inversedBy": "discover_items"
     }

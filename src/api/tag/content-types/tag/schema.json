@@ -20,9 +20,21 @@
     },
     "discover_items": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToMany",
       "target": "api::discover-item.discover-item",
-      "mappedBy": "tag"
+      "mappedBy": "tags"
+    },
+    "agenda_items": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::agenda-item.agenda-item",
+      "mappedBy": "tags"
+    },
+    "news_items": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::news-item.news-item",
+      "mappedBy": "tags"
     }
   }
 }

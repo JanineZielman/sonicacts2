@@ -23,6 +23,21 @@
     },
     "title": {
       "type": "string"
+    },
+    "order": {
+      "type": "string"
+    },
+    "agenda_items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::agenda-item.agenda-item",
+      "mappedBy": "category"
+    },
+    "news_items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::news-item.news-item",
+      "mappedBy": "category"
     }
   }
 }

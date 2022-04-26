@@ -16,13 +16,20 @@
       "type": "uid"
     },
     "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "footer_links": {
+      "type": "dynamiczone",
+      "components": [
+        "links.slug"
+      ]
     }
   }
 }

@@ -15,8 +15,23 @@
     "slug": {
       "type": "uid"
     },
-    "IntroText": {
-      "type": "text"
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "dynamiczone",
+      "components": [
+        "basic.collapsible",
+        "basic.embed",
+        "basic.image",
+        "basic.sidenote",
+        "basic.text"
+      ]
+    },
+    "footnotes": {
+      "type": "component",
+      "repeatable": false,
+      "component": "footnotes.footnotes"
     }
   }
 }
