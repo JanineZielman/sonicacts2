@@ -30,6 +30,13 @@
       "components": [
         "links.slug"
       ]
+    },
+    "favicon": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
