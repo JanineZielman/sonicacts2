@@ -15,7 +15,7 @@
     "slug": {
       "type": "uid"
     },
-    "logo": {
+    "image": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -32,11 +32,18 @@
       ]
     },
     "favicon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "description": {
+      "type": "text"
+    },
+    "title": {
+      "type": "string"
     }
   }
 }

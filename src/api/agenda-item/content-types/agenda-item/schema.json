@@ -80,6 +80,18 @@
     },
     "available_at": {
       "type": "richtext"
+    },
+    "kind": {
+      "type": "enumeration",
+      "enum": [
+        "opencall",
+        "event"
+      ],
+      "default": "event",
+      "required": true
+    },
+    "deadline": {
+      "type": "date"
     }
   }
 }
