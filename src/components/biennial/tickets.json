@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_biennial_tickets",
+  "info": {
+    "displayName": "tickets",
+    "icon": "ticket-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "link": {
+      "type": "string"
+    },
+    "ticket": {
+      "displayName": "ticket",
+      "type": "component",
+      "repeatable": true,
+      "component": "biennial.ticket"
+    }
+  }
+}

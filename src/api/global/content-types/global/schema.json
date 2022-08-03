@@ -44,6 +44,21 @@
     },
     "title": {
       "type": "string"
+    },
+    "festival_title": {
+      "type": "string"
+    },
+    "festival_shown": {
+      "type": "boolean"
+    },
+    "festival_slug": {
+      "type": "string"
+    },
+    "socials": {
+      "type": "dynamiczone",
+      "components": [
+        "socials.social"
+      ]
     }
   }
 }

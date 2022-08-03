@@ -78,6 +78,11 @@
       "relation": "manyToMany",
       "target": "api::tag.tag",
       "inversedBy": "discover_items"
+    },
+    "author": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::community-item.community-item"
     }
   }
 }
