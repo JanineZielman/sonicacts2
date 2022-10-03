@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_biennial_days",
+  "info": {
+    "displayName": "day",
+    "icon": "calendar",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "date": {
+      "type": "date"
+    },
+    "event": {
+      "type": "component",
+      "repeatable": true,
+      "component": "biennial.event"
+    }
+  }
+}

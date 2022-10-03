@@ -24,9 +24,6 @@
         "basic.collapsible"
       ]
     },
-    "sidebar": {
-      "type": "richtext"
-    },
     "contact_adres": {
       "type": "text"
     },

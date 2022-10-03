@@ -32,6 +32,9 @@
       "type": "component",
       "repeatable": false,
       "component": "footnotes.footnotes"
+    },
+    "embed": {
+      "type": "boolean"
     }
   }
 }

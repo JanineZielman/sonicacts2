@@ -15,20 +15,11 @@
     "slug": {
       "type": "uid"
     },
-    "IntroText": {
-      "type": "text"
-    },
-    "sidebar": {
+    "links": {
       "type": "richtext"
     },
     "ArtistsIntro": {
       "type": "richtext"
-    },
-    "festival": {
-      "type": "dynamiczone",
-      "components": [
-        "festival.festival"
-      ]
     },
     "content": {
       "type": "dynamiczone",
@@ -39,6 +30,58 @@
         "basic.sidenote",
         "basic.text"
       ]
+    },
+    "tickets": {
+      "type": "dynamiczone",
+      "components": [
+        "biennial.info",
+        "biennial.ticket",
+        "biennial.donate"
+      ]
+    },
+    "visit": {
+      "type": "dynamiczone",
+      "components": [
+        "biennial.location",
+        "biennial.info",
+        "biennial.map",
+        "biennial.collapsible"
+      ]
+    },
+    "biennial_tags": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::biennial-tag.biennial-tag",
+      "inversedBy": "biennials"
+    },
+    "community_items": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::community-item.community-item",
+      "inversedBy": "biennials"
+    },
+    "news_items": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::news-item.news-item",
+      "inversedBy": "biennials"
+    },
+    "programmes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::programme.programme",
+      "mappedBy": "biennial"
+    },
+    "prefooter": {
+      "type": "component",
+      "repeatable": false,
+      "component": "biennial.prefooter"
+    },
+    "highlight": {
+      "type": "richtext"
+    },
+    "radio": {
+      "type": "text"
     }
   }
 }

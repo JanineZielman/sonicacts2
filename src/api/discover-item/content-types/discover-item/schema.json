@@ -79,10 +79,17 @@
       "target": "api::tag.tag",
       "inversedBy": "discover_items"
     },
-    "author": {
+    "authors": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::community-item.community-item"
+      "relation": "manyToMany",
+      "target": "api::community-item.community-item",
+      "inversedBy": "discover_items"
+    },
+    "news_items": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::news-item.news-item",
+      "inversedBy": "discover_items"
     }
   }
 }

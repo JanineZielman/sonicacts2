@@ -49,6 +49,24 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::tag.tag"
+    },
+    "programmes": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::programme.programme",
+      "inversedBy": "community_items"
+    },
+    "biennials": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::biennial.biennial",
+      "mappedBy": "community_items"
+    },
+    "discover_items": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::discover-item.discover-item",
+      "inversedBy": "authors"
     }
   }
 }
