@@ -35,6 +35,12 @@
     },
     "embed": {
       "type": "boolean"
+    },
+    "geoblocking": {
+      "type": "boolean"
+    },
+    "geoblocking_error": {
+      "type": "text"
     }
   }
 }

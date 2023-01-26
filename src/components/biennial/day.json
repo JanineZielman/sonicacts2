@@ -10,10 +10,24 @@
     "date": {
       "type": "date"
     },
-    "event": {
+    "programme": {
+      "displayName": "location",
       "type": "component",
       "repeatable": true,
-      "component": "biennial.event"
+      "component": "single-programme.location"
+    },
+    "location": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::location.location"
+    },
+    "sub_location": {
+      "type": "boolean"
+    },
+    "sub_locations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::location.location"
     }
   }
 }

@@ -90,6 +90,9 @@
       "relation": "manyToMany",
       "target": "api::news-item.news-item",
       "inversedBy": "discover_items"
+    },
+    "additional_info": {
+      "type": "string"
     }
   }
 }

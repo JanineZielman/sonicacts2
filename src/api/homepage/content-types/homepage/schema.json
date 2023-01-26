@@ -49,6 +49,12 @@
     },
     "highlight_subtitle": {
       "type": "string"
+    },
+    "shop_item": {
+      "type": "dynamiczone",
+      "components": [
+        "basic.shop-item"
+      ]
     }
   }
 }

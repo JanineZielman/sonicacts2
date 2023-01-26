@@ -72,7 +72,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::discover-item.discover-item",
-      "inversedBy": "news_items"
+      "mappedBy": "news_items"
     }
   }
 }

@@ -113,9 +113,6 @@
       "relation": "oneToMany",
       "target": "api::community-item.community-item"
     },
-    "order": {
-      "type": "float"
-    },
     "sub_programmes_title": {
       "type": "string"
     },
@@ -142,6 +139,9 @@
     },
     "registration_label": {
       "type": "string"
+    },
+    "order": {
+      "type": "biginteger"
     }
   }
 }

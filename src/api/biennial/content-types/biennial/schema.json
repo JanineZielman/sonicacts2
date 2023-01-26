@@ -82,6 +82,9 @@
     },
     "radio": {
       "type": "text"
+    },
+    "mobile_radio_text": {
+      "type": "string"
     }
   }
 }

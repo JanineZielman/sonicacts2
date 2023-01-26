@@ -38,6 +38,13 @@
       "relation": "oneToMany",
       "target": "api::news-item.news-item",
       "mappedBy": "category"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "sub_category": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
