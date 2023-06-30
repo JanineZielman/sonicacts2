@@ -4,7 +4,8 @@
   "info": {
     "singularName": "discover-overview",
     "pluralName": "discover-overviews",
-    "displayName": "Discover Overview"
+    "displayName": "Discover Overview",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,8 +15,11 @@
     "slug": {
       "type": "uid"
     },
-    "intro": {
+    "introTextBig": {
       "type": "text"
+    },
+    "introTextSmall": {
+      "type": "richtext"
     }
   }
 }

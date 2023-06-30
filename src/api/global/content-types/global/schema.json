@@ -59,6 +59,11 @@
       "components": [
         "socials.social"
       ]
+    },
+    "prefooter": {
+      "type": "component",
+      "repeatable": false,
+      "component": "biennial.prefooter"
     }
   }
 }

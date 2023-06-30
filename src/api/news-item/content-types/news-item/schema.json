@@ -73,6 +73,12 @@
       "relation": "manyToMany",
       "target": "api::discover-item.discover-item",
       "mappedBy": "news_items"
+    },
+    "agenda_items": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::agenda-item.agenda-item",
+      "mappedBy": "news_items"
     }
   }
 }

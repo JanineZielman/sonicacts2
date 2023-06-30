@@ -141,7 +141,8 @@
       "type": "string"
     },
     "order": {
-      "type": "biginteger"
+      "type": "biginteger",
+      "default": "0"
     }
   }
 }

@@ -26,8 +26,9 @@
     },
     "community_items": {
       "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::community-item.community-item"
+      "relation": "manyToMany",
+      "target": "api::community-item.community-item",
+      "inversedBy": "agenda_items"
     },
     "title": {
       "type": "string"
@@ -92,6 +93,15 @@
     },
     "deadline": {
       "type": "date"
+    },
+    "hide": {
+      "type": "boolean"
+    },
+    "news_items": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::news-item.news-item",
+      "inversedBy": "agenda_items"
     }
   }
 }

@@ -93,6 +93,13 @@
     },
     "additional_info": {
       "type": "string"
+    },
+    "hide_date": {
+      "type": "boolean"
+    },
+    "hide_names": {
+      "type": "boolean",
+      "default": true
     }
   }
 }
