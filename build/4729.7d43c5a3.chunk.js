@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunksonicacts=self.webpackChunksonicacts||[]).push([[4729],{90435:e=>{e.exports=JSON.parse('{"label.draft":"Ouvrir l\'aper\xe7u du brouillon","label.published":"Ouvrir la vue en direct"}')}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunksonicacts=self.webpackChunksonicacts||[]).push([[9778],{79778:e=>{e.exports=JSON.parse('{"label.draft":"Open draft preview","label.published":"Open live view"}')}}]);
